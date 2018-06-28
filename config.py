@@ -17,7 +17,7 @@ class DevConfig(Config):
     '''
     development configuration child class
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://gitu_m:sqlpass@localhost/pitchsite'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://nicholas:moringa@localhost/pitch'
     DEBUG = True
 
 config_options = {
