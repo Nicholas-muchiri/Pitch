@@ -20,6 +20,7 @@ def category(id):
     view category function that returns the pitches of that category
     '''
     category = Category.query.get(id)
+    title = f'{category.name} pitches'
     pitch = Pitch.get_pitches(category.id)
 
     return render_template('category.html', title = title, category = category, pitch = pitch)
