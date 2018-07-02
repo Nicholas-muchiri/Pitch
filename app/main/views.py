@@ -6,19 +6,15 @@ from flask_login import login_required, current_user
 
 @main.route('/')
 def index():
-    '''
-    view root page function that returns index page
-    '''
+   
     category = Category.get_categories()
 
     title = 'Home'
     return render_template('index.html', title = title, category = category)
 
 @main.route('/category/<int:id>')
-def category(id):
-    '''
-    view category function that returns the pitches of that category
-    '''
+def category(id):    
+    
     category = Category.query.get(id)
     if category == None:
         return 'not found'
