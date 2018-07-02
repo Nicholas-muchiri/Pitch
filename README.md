@@ -17,6 +17,10 @@ This website will:
 2.Flask (in python)
 3.Postgresql (database to store your login credentials and pitches.)
 
+#### Bugs
+No known bugs at the moment, but if any found do not hesitate to contact me.
+
+
 #### Installation
 You need to have Python3 to run this website.
 
