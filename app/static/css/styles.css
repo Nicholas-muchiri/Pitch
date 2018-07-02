@@ -29,7 +29,7 @@ html, body {
     list-style: none;
 }
 .category-button {
-    background-color: rgb(253, 145, 14);
+    background-color: black;
     border-radius: 22.5px;
     border: none;
     color: rgb(255, 251, 251);
@@ -38,7 +38,7 @@ html, body {
     margin-top: 2%;
 }
 .category-button:hover {
-    background-color: rgba(252, 195, 7, 0.932);
+    background-color: black;
     
 }
 .category-button h3 {
@@ -47,11 +47,11 @@ html, body {
 }
 #title-home {
     padding-top: 8rem;
-    padding-bottom: 30rem;
+    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     font-family: 'Lovers Quarrel';
-    font-size: 10rem;
+    font-size: 300px;
 
 /* base.html */
 .navbar {
