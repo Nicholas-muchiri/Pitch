@@ -15,6 +15,17 @@
 
 
 
+#title-home {
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lovers Quarrel';
+    font-size: 300px;
+    font-color:white;
+}
+
+
 .category-list {
     padding-left: 0%;
 }
@@ -48,15 +59,7 @@
     font-weight: bold;
     margin-top: 10px; 
 }
-#title-home {
-    padding-top: 8rem;
-    padding-bottom: 1rem;
-    display: flex;
-    justify-content: center;
-    font-family: 'Lovers Quarrel';
-    font-size: 300px;
-    font-color:white;
-}
+
 
 
 .navbar {
