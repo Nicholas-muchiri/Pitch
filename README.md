@@ -13,20 +13,20 @@ This website will:
 6. allow the user to review pitches that have been posted by other users
 
 #### Technologies
-Python
-Flask (in python)
-Postgresql (database)
+1.Python3.6 (for it to run perfectly.)
+2.Flask (in python)
+3.Postgresql (database to store your login credentials and pitches.)
 
 #### Installation
 You need to have Python3 to run this website.
 
- `$ git clone <this-repository>`
+ `$ git clone <Pitch>` into your machine.
  
- Create a virtual environment.
+ Create a virtual environment using ("source virtual/bin/activate")
  
  `pip3 install -r requirements.txt`
 
-Run the website
+Run the website on /start.sh
 
 ### Author
 Nicholas Muchiri
