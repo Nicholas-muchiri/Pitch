@@ -1,17 +1,16 @@
 from app import create_app, db
-from flask_script import Manager, Server
 from app.models import User, Role, Category, Pitch, Review
 from flask_migrate import Migrate, MigrateCommand
+from flask_script import Manager, Server
 
-# create app instance 
+
 app =  create_app('development')
-
+# app =  create_app("management")
 
 manager = Manager(app)
 manager.add_command('server', Server)
 @manager.command
 def test():
-    '''run utitest'''
     import unittest
     tests = unittest.TestLoader().discover('test')
     unittest.TextTestRunner(verbosity=2).run(tests)
