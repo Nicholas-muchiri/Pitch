@@ -22,7 +22,7 @@ No known bugs at the moment, but if any found do not hesitate to contact me.
 
 
 #### Installation
-You need to have Python3 to run this website.
+You need to have Python3.6 to run this website.
 
  `$ git clone <Pitch>` into your machine.
  
