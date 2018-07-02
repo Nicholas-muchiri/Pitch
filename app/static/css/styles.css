@@ -10,7 +10,7 @@ html, body {
     height: 93vh; 
 }
 .welcome {
-    background-image: url("/static/img/orange_triangles.png");
+    background-image: url("/static/image/orange_triangles.png");
     background-repeat: no-repeat;
     width: 100%;
     margin-top: 0%;
@@ -46,10 +46,12 @@ html, body {
     margin-top: 10px; 
 }
 #title-home {
-    font-weight: bolder;
-    font-size: 60px;
-    color: rgb(48, 47, 47);
-}
+    padding-top: 8rem;
+    padding-bottom: 30rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lovers Quarrel';
+    font-size: 10rem;
 
 /* base.html */
 .navbar {
@@ -71,7 +73,7 @@ html, body {
     width: 355px;
 }
 #category-head {
-    background-image: url("/static/img/orange_triangles.png");
+    background-image: url("/static/image/min.jpg");
     background-repeat: no-repeat;
     width: 100%;
     margin-top: 0%;
@@ -123,4 +125,19 @@ html, body {
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
+}
+
+.scroll {
+    text-align: left;
+    position: absolute;
+    bottom: 60px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    padding-bottom: 40px;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    padding-left: 5rem;
 }

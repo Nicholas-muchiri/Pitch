@@ -20,6 +20,8 @@ def category(id):
     view category function that returns the pitches of that category
     '''
     category = Category.query.get(id)
+    if category == None:
+        return 'not found'
     title = f'{category.name} pitches'
     pitch = Pitch.get_pitches(category.id)
 
