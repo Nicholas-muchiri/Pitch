@@ -17,12 +17,13 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(255), unique = True, index = True)
     password_hash = db.Column(db.String(255))   
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
-    pitches =  db.relationship('Pitch', backref = 'user', lazy = "dynamic")
     reviews = db.relationship('Review', backref = 'user', lazy = "dynamic")
 
+    pitches =  db.relationship('Pitch', backref = 'user', lazy = "dynamic")
+    
     @property
     def password(self):
-        raise AttributeError('You cannot read the password attribute')
+        raise AttributeError('password cant be read.')
 
     @password.setter
     def password(self, password):
