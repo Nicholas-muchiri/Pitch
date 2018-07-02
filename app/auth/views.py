@@ -1,7 +1,7 @@
-from . import auth
+from ..models import User
 from flask import render_template, request, redirect, url_for, flash
 from flask_login import login_user, logout_user, login_required
-from ..models import User
+from . import auth
 from .forms import LoginForm, RegistrationForm
 from .. import db
 
@@ -28,7 +28,7 @@ def register():
         db.session.commit()
         
         return redirect(url_for('.login'))
-        flash('Your account was registered successfully. You can now log in.')
+        flash('Congratulations, Log in now.')
         
     title = "New Account"
     return render_template('auth/register.html', title = title, registration_form = form)
