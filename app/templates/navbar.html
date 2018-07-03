@@ -4,16 +4,25 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="/"> Pitch it  </a>
       </div>
+
+      
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">My categories<b class="caret"></b></a>
+
+
+
             <ul class="dropdown-menu">
                 <li><a href="/category/1">Cars</a></li><li><a href="/category/2">Technology</a></li><li><a href="/category/3">Architecture</a></li><li><a href="/category/4">Fashion</a></li><li><a href="/category/5">Future life</a></li>
               </ul>
             </li>
         </ul> 
+
+
+
+
         <ul class="nav navbar-nav navbar-right">
           {% if current_user.is_authenticated %}
           <li class="navbar-brand" >{{current_user.username}}</li>
