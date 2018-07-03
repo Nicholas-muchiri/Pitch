@@ -10,15 +10,10 @@
           <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">My categories<b class="caret"></b></a>
             <ul class="dropdown-menu">
-                <li><a href="/category/1">Cars</a></li>
-                <li><a href="/category/2">Technology</a></li>
-                <li><a href="/category/3">Architecture</a></li>
-                <li><a href="/category/4">Fashion</a></li>
-                <li><a href="/category/5">Future life</a></li>
+                <li><a href="/category/1">Cars</a></li><li><a href="/category/2">Technology</a></li><li><a href="/category/3">Architecture</a></li><li><a href="/category/4">Fashion</a></li><li><a href="/category/5">Future life</a></li>
               </ul>
             </li>
-        </ul>
-                    
+        </ul> 
         <ul class="nav navbar-nav navbar-right">
           {% if current_user.is_authenticated %}
           <li class="navbar-brand" >{{current_user.username}}</li>
@@ -26,7 +21,7 @@
           {% else %}
           <li><a href="{{url_for('auth.register')}}">Register</a></li>
           <li class="divider"></li>
-          <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+          <li><a href="{{url_for('auth.login')}}">Login</a></li>
           {% endif %}
         </ul>
         
