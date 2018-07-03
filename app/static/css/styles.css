@@ -54,6 +54,7 @@ h3 {
 }
 #category-cards {
     margin-left: 2%;
+    padding-left: 30%
 }
 .pitch-content {
     padding: 2%;
@@ -100,7 +101,8 @@ html, body {
 .category-container {
     background-color: rgb(231, 239, 253);
     height: 100%;
-    padding: 0%;
+    padding-right:  0%;
+
 }
 
 #avatar {
